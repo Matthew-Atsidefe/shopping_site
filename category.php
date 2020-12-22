@@ -17,8 +17,8 @@
     	<?php do {
     		?>
     		<div class="item">
-    		<p><?php echo $stock_rs['name']; ?></p>
-    		<p>$<?php echo $stock_rs['price']; ?></p>
+    		<a href="index.php?page=item&stockID=<?php echo $stock_rs['stockID'];?>"><p><?php echo $stock_rs['name']; ?></p>
+    		<p>$<?php echo $stock_rs['price']; ?></p></a>
     		</div>
     	<?php
     	} while ( $stock_rs=mysqli_fetch_assoc($stock_query));
